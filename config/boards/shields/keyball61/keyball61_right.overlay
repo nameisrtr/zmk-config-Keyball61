@@ -97,7 +97,7 @@ nice_view_spi: &spi2 {
                 <&kp LC(LEFT)>,
                 <&kp LC(UP)>,
                 <&kp LC(DOWN)>;
-            tick = <100>;
+            tick = <200>;
         };
     };
 };
