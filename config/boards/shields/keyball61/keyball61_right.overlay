@@ -91,13 +91,13 @@ nice_view_spi: &spi2 {
         snipe-layers = <6>;
 
         sym_desktop_nav {
-            layers = <1>;
+            layers = <1 2>;
             bindings =
                 <&kp LC(RIGHT)>,
                 <&kp LC(LEFT)>,
                 <&kp LC(UP)>,
                 <&kp LC(DOWN)>;
-            tick = <12>;
+            tick = <8>;
         };
     };
 };
