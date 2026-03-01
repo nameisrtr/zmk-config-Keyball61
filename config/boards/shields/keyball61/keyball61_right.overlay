@@ -5,6 +5,7 @@
  */
  
 #include "keyball61.dtsi"
+#include <dt-bindings/zmk/keys.h>
 
 &default_transform {
     col-offset = <7>;
@@ -88,6 +89,16 @@ nice_view_spi: &spi2 {
         irq-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         scroll-layers = <5>;
         snipe-layers = <6>;
+
+        sym_desktop_nav {
+            layers = <1>;
+            bindings =
+                <&kp LC(RIGHT)>,
+                <&kp LC(LEFT)>,
+                <&kp LC(UP)>,
+                <&kp LC(DOWN)>;
+            tick = <12>;
+        };
     };
 };
 
