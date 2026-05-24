@@ -30,6 +30,34 @@
 };
 
 / {
+    macros {
+        zoom_in: zoom_in {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &msc SCRL_UP>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        zoom_out: zoom_out {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &msc SCRL_DOWN>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 

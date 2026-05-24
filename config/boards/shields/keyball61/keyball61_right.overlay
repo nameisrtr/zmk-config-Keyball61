@@ -103,10 +103,10 @@ nice_view_spi: &spi2 {
         zoom {
             layers = <8>;
             bindings =
-                <&kp LG(PLUS)>,
-                <&kp LG(MINUS)>,
-                <&kp LG(PLUS)>,
-                <&kp LG(MINUS)>;
+                <&zoom_in>,
+                <&zoom_out>,
+                <&zoom_in>,
+                <&zoom_out>;
             tick = <300>;
         };
     };
