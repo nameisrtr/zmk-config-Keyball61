@@ -107,7 +107,7 @@ nice_view_spi: &spi2 {
                 <&zoom_out>,
                 <&zoom_in>,
                 <&zoom_out>;
-            tick = <300>;
+            tick = <200>;
         };
     };
 };
