@@ -87,7 +87,7 @@ nice_view_spi: &spi2 {
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        scroll-layers = <5 8>;
+        scroll-layers = <5>;
         snipe-layers = <6>;
 
         sym_desktop_nav {
@@ -97,6 +97,16 @@ nice_view_spi: &spi2 {
                 <&kp LC(LEFT)>,
                 <&kp LC(UP)>,
                 <&kp LC(DOWN)>;
+            tick = <300>;
+        };
+
+        zoom {
+            layers = <8>;
+            bindings =
+                <&zoom_in>,
+                <&zoom_out>,
+                <&zoom_in>,
+                <&zoom_out>;
             tick = <300>;
         };
     };
