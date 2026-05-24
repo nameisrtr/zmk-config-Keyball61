@@ -33,7 +33,7 @@ layers:
   - G
   - H
   - J
-  - {t: K, h: ZOOM}
+  - {t: K, h: '&zoom_hold 8'}
   - {t: L, h: SCROLL}
   - {t: ;, h: MOUSE, s: ':'}
   - {t: '''', s: '"'}
@@ -529,7 +529,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
