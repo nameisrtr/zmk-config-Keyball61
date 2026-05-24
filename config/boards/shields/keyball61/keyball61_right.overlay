@@ -99,6 +99,16 @@ nice_view_spi: &spi2 {
                 <&kp LC(DOWN)>;
             tick = <300>;
         };
+
+        zoom {
+            layers = <8>;
+            bindings =
+                <&kp LG(PLUS)>,
+                <&kp LG(MINUS)>,
+                <&kp LG(PLUS)>,
+                <&kp LG(MINUS)>;
+            tick = <300>;
+        };
     };
 };
 
