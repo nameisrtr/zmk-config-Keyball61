@@ -3,3 +3,6 @@ config SHIELD_KEYBALL61_LEFT
 
 config SHIELD_KEYBALL61_RIGHT
     def_bool $(shields_list_contains,keyball61_right)
+
+config SHIELD_KEYBALL61_DAILY_POWER
+    def_bool $(shields_list_contains,keyball61_daily_power)
