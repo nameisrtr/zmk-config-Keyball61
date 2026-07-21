@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
-      revision: main
+      revision: 5e04553ab803d24405bd45621a41310ea3050e59
   self:
     path: config
