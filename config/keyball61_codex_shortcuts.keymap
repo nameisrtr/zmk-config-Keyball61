@@ -9,14 +9,14 @@
 
 #define CODEX 9
 
-#define CODEX_ACTIVATE          LC(LA(F16))
+#define CODEX_ACTIVATE          LC(LA(LG(F)))
 #define CODEX_NEXT_THREAD       LG(LS(RIGHT_BRACKET))
 #define CODEX_DICTATION_TOGGLE  LC(LA(LS(F19)))
 
 / {
     macros {
         /*
-         * Ask macOS to activate Codex, then give the window 350 ms to become
+         * Ask macOS to activate Codex, then give the window 1300 ms to become
          * key before invoking ChatGPT's default next-thread shortcut.
          * The zero-time &none tap is an inert queue item that creates a true
          * pre-action delay; macro wait-ms otherwise applies after an action.
@@ -29,7 +29,7 @@
             bindings
                 = <&kp CODEX_ACTIVATE>
                 , <&macro_tap_time 0>
-                , <&macro_wait_time 350>
+                , <&macro_wait_time 1300>
                 , <&none>
                 , <&macro_tap_time 40>
                 , <&macro_wait_time 0>
