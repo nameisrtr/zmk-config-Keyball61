@@ -1,0 +1,2 @@
+config SHIELD_KEYBALL61_POWER_GUARD
+    def_bool $(shields_list_contains,keyball61_power_guard)
